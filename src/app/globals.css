@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-start-rgb: 17, 24, 39; /* gray-900 */
+  --background-end-rgb: 17, 24, 39;
+  --foreground-rgb: 243, 244, 246; /* gray-100 */
+
+  --card-rgb: 31, 41, 55; /* gray-800 */
+  --card-foreground-rgb: 243, 244, 246; /* gray-100 */
+  --card-border-rgb: 55, 65, 81; /* gray-700 */
+
+  --primary-rgb: 59, 130, 246; /* blue-500 */
+  --primary-foreground-rgb: 255, 255, 255;
+
+  --secondary-rgb: 55, 65, 81; /* gray-700 */
+  --secondary-foreground-rgb: 243, 244, 246; /* gray-100 */
+
+  --input-rgb: 55, 65, 81; /* gray-700 */
+  --ring-rgb: 59, 130, 246; /* blue-500 */
+
+  --radius: 0.5rem;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+.card {
+  background-color: rgb(var(--card-rgb));
+  color: rgb(var(--card-foreground-rgb));
+  border-radius: var(--radius);
+  border: 1px solid rgb(var(--card-border-rgb));
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: rgb(var(--primary-rgb));
+  color: rgb(var(--primary-foreground-rgb));
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: rgb(var(--secondary-rgb));
+  color: rgb(var(--secondary-foreground-rgb));
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+.input {
+  background-color: rgb(var(--input-rgb));
+  border: 1px solid rgb(var(--card-border-rgb));
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: rgb(var(--primary-rgb));
+  box-shadow: 0 0 0 2px rgb(var(--ring-rgb));
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 2rem 2rem;
+}
