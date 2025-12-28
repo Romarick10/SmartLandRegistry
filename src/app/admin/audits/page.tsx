@@ -1,3 +1,4 @@
+'use client';
 import AdminSectionPage from '../AdminSectionPage';
 import { CheckSquare } from 'lucide-react';
 

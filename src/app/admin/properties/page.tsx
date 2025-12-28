@@ -1,3 +1,5 @@
+"use client";
+
 import AdminSectionPage from '../AdminSectionPage';
 import { Landmark } from 'lucide-react';
 

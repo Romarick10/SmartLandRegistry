@@ -1,3 +1,5 @@
+"use client";
+
 import AdminSectionPage from '../AdminSectionPage';
 import { ShieldAlert } from 'lucide-react';
 
